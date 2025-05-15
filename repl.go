@@ -1,12 +1,11 @@
 package main
 
 import(
-	"fmt"
 	"strings"
 	)
 
 func 	cleanInput(text string) []string {
-	output := strings.TrimSpace(text)
+	output := strings.ToLower(text)
 	words := strings.Fields(output)
 	return words
 
